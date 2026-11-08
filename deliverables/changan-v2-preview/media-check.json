@@ -1,0 +1,14 @@
+{
+  "width": 1920,
+  "height": 1080,
+  "fps": 30,
+  "frames": 300,
+  "video_duration_seconds": 10.0,
+  "container_duration_seconds": 10.005,
+  "codec": "h264",
+  "pixel_format": "yuv420p",
+  "full_decode": "PASS",
+  "narration": "None; Chinese subtitles and ambience",
+  "visual_review": "Five actual video frames plus full-resolution middle frame reviewed; slow camera, clear subtitles; this is an exterior material study, not a gate walkthrough",
+  "sha256": "bdac1a5a51addb94307af4dc1778503e322f6980114a4282bb09d9a8a4d1a42e"
+}
