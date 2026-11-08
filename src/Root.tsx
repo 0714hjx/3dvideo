@@ -1,6 +1,7 @@
 import { Composition, staticFile } from "remotion";
 import { Scene, myCompSchema } from "./Scene";
 import { getMediaMetadata } from "./helpers/get-media-metadata";
+import { ChanganFilm } from "./changan/Film";
 
 // Welcome to the Remotion Three Starter Kit!
 // Two compositions have been created, showing how to use
@@ -20,6 +21,8 @@ import { getMediaMetadata } from "./helpers/get-media-metadata";
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition id="ChanganGateTest" component={ChanganFilm} durationInFrames={240} fps={30} width={1920} height={1080} defaultProps={{test: true}} />
+      <Composition id="Changan" component={ChanganFilm} durationInFrames={1800} fps={30} width={1920} height={1080} defaultProps={{test: false}} />
       <Composition
         id="Scene"
         component={Scene}

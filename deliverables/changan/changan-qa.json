@@ -1,0 +1,66 @@
+{
+  "test_media": "out/changan-gate-test.mp4",
+  "test_frames": 240,
+  "test_duration_seconds": 8,
+  "test_resolution": [
+    1920,
+    1080
+  ],
+  "test_fps": 30,
+  "walk_eye_height_m": 1.65,
+  "walk_camera_start_m": [
+    0,
+    1.65,
+    9
+  ],
+  "walk_camera_end_m": [
+    0,
+    1.65,
+    -4
+  ],
+  "walk_speed_m_per_second": 1.6317991631799162,
+  "collision_check": "Actual rendered mesh world bounds vs camera sphere radius 0.25m on every street frame; throws on intersection",
+  "final_frame_clearance_evidence": {
+    "frame": 239,
+    "renderSceneChecks": [
+      "CAMERA CHECK: all sampled frames collision-free; final mesh clearance 1.65m; eye height 1.65m"
+    ]
+  },
+  "visual_review": [
+    "8 actual video frames at 1-second intervals inspected in out/test-contact.png",
+    "Full-resolution crossing frame inspected at 6.5 seconds: no wall intersection, central free path, subtitle readable",
+    "Gate beam and wall heights compared with 1.65m person and camera; dimensions are scenario assumptions, not excavated measurements",
+    "City, road, management and end-credit stills inspected; sources and primary subtitles have separate areas",
+    "Final delivered MP4 contact sheet reviewed across all five shots; 1080p interior and law quotation frames reviewed",
+    "Street-to-city fog reset fixed and re-rendered frames 1490-1799; first 1500 original frames + 300 corrected ending frames assembled, preserving exact 1800-frame video",
+    "Final delivered ending frame at 57.5s checked: city remains legible, sources and subtitles do not overlap"
+  ],
+  "final_media_verification": "PASS: 1800 video frames at 30 fps, 1920x1080, H.264/yuv420p, AAC ambience, complete decode; AAC container padding 0.011 seconds",
+  "final_media": [
+    {
+      "file": "changan-gate-test.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "frames": 240,
+      "duration": 8.0,
+      "audio": "AAC ambience, no recorded narration",
+      "full_decode": "PASS"
+    },
+    {
+      "file": "changan.mp4",
+      "width": 1920,
+      "height": 1080,
+      "fps": "30/1",
+      "frames": 1800,
+      "duration": 60.011,
+      "audio": "AAC ambience, no recorded narration",
+      "full_decode": "PASS"
+    }
+  ],
+  "audio_check": {
+    "mean_volume_db": -41.0,
+    "max_volume_db": -24.6,
+    "speech": "none; separate Chinese narration script supplied"
+  }
+}
